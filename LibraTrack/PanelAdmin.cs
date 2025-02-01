@@ -34,5 +34,11 @@ namespace LibraTrack
             new KelolaBukuForm().Show();
             this.Hide();
         }
+
+        private void btnPinjaman_Click(object sender, EventArgs e)
+        {
+            new KelolaPinjamanForm().Show();
+            this.Hide();
+        }
     }
 }

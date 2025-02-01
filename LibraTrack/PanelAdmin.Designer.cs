@@ -209,6 +209,7 @@
             btnPinjaman.Size = new Size(99, 99);
             btnPinjaman.TabIndex = 35;
             btnPinjaman.TabStop = false;
+            btnPinjaman.Click += btnPinjaman_Click;
             // 
             // panel1
             // 

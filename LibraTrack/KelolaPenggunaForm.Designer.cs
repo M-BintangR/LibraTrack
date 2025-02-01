@@ -57,9 +57,9 @@
             label4.ForeColor = Color.FromArgb(15, 83, 122);
             label4.Location = new Point(198, 63);
             label4.Name = "label4";
-            label4.Size = new Size(120, 19);
+            label4.Size = new Size(154, 19);
             label4.TabIndex = 39;
-            label4.Text = "Kelola daftar buku";
+            label4.Text = "Kelola daftar pengguna.";
             // 
             // label3
             // 
@@ -67,9 +67,9 @@
             label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(198, 31);
             label3.Name = "label3";
-            label3.Size = new Size(120, 25);
+            label3.Size = new Size(164, 25);
             label3.TabIndex = 38;
-            label3.Text = "Daftar Buku";
+            label3.Text = "Daftar Pengguna";
             // 
             // pictureBox1
             // 
@@ -97,9 +97,9 @@
             label1.ForeColor = Color.Black;
             label1.Location = new Point(398, 140);
             label1.Name = "label1";
-            label1.Size = new Size(82, 19);
+            label1.Size = new Size(116, 19);
             label1.TabIndex = 42;
-            label1.Text = "Tabel Buku";
+            label1.Text = "Tabel Pengguna";
             // 
             // label2
             // 
