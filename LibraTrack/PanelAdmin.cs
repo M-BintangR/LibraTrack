@@ -25,12 +25,14 @@ namespace LibraTrack
 
         private void btnPengguna_Click(object sender, EventArgs e)
         {
-
+            new KelolaPenggunaForm().Show();
+            this.Hide();
         }
 
         private void btnBuku_Click(object sender, EventArgs e)
         {
-
+            new KelolaBukuForm().Show();
+            this.Hide();
         }
     }
 }
