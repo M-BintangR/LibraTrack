@@ -40,32 +40,32 @@
             label6 = new Label();
             btnPinjaman = new FontAwesome.Sharp.IconPictureBox();
             panel1 = new Panel();
-            label7 = new Label();
-            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            label8 = new Label();
-            totalAdmin = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            totalPengguna = new Label();
-            iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            totalBuku = new Label();
-            label13 = new Label();
-            iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            totalPinjaman = new Label();
-            label14 = new Label();
+            label11 = new Label();
             totalPinjamanSelesai = new Label();
             label16 = new Label();
             iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            label11 = new Label();
+            totalPinjaman = new Label();
+            label14 = new Label();
+            iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            totalBuku = new Label();
+            label13 = new Label();
+            iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            label10 = new Label();
+            totalPengguna = new Label();
+            label9 = new Label();
+            totalAdmin = new Label();
+            label8 = new Label();
+            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnPengguna).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnBuku).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnPinjaman).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -101,6 +101,7 @@
             // btnPengguna
             // 
             btnPengguna.BackColor = Color.White;
+            btnPengguna.Cursor = Cursors.Hand;
             btnPengguna.ForeColor = Color.FromArgb(15, 83, 122);
             btnPengguna.IconChar = FontAwesome.Sharp.IconChar.User;
             btnPengguna.IconColor = Color.FromArgb(15, 83, 122);
@@ -136,6 +137,7 @@
             // btnBuku
             // 
             btnBuku.BackColor = Color.White;
+            btnBuku.Cursor = Cursors.Hand;
             btnBuku.ForeColor = Color.FromArgb(15, 83, 122);
             btnBuku.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
             btnBuku.IconColor = Color.FromArgb(15, 83, 122);
@@ -196,6 +198,7 @@
             // btnPinjaman
             // 
             btnPinjaman.BackColor = Color.White;
+            btnPinjaman.Cursor = Cursors.Hand;
             btnPinjaman.ForeColor = Color.FromArgb(15, 83, 122);
             btnPinjaman.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
             btnPinjaman.IconColor = Color.FromArgb(15, 83, 122);
@@ -231,149 +234,16 @@
             panel1.Size = new Size(287, 422);
             panel1.TabIndex = 37;
             // 
-            // label7
+            // label11
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(15, 34);
-            label7.Name = "label7";
-            label7.Size = new Size(132, 19);
-            label7.TabIndex = 38;
-            label7.Text = "Jumlah data anda!";
-            // 
-            // iconPictureBox1
-            // 
-            iconPictureBox1.BackColor = Color.White;
-            iconPictureBox1.ForeColor = Color.FromArgb(15, 83, 122);
-            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
-            iconPictureBox1.IconColor = Color.FromArgb(15, 83, 122);
-            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Regular;
-            iconPictureBox1.IconSize = 51;
-            iconPictureBox1.Location = new Point(17, 100);
-            iconPictureBox1.Name = "iconPictureBox1";
-            iconPictureBox1.Size = new Size(51, 51);
-            iconPictureBox1.TabIndex = 38;
-            iconPictureBox1.TabStop = false;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(77, 104);
-            label8.Name = "label8";
-            label8.Size = new Size(90, 15);
-            label8.TabIndex = 39;
-            label8.Text = "Total Pengguna";
-            // 
-            // totalAdmin
-            // 
-            totalAdmin.AutoSize = true;
-            totalAdmin.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalAdmin.Location = new Point(81, 130);
-            totalAdmin.Name = "totalAdmin";
-            totalAdmin.Size = new Size(17, 20);
-            totalAdmin.TabIndex = 40;
-            totalAdmin.Text = "0";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.FromArgb(130, 202, 24);
-            label9.Location = new Point(118, 133);
-            label9.Name = "label9";
-            label9.Size = new Size(43, 15);
-            label9.TabIndex = 41;
-            label9.Text = "Admin";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.FromArgb(19, 146, 167);
-            label10.Location = new Point(207, 133);
-            label10.Name = "label10";
-            label10.Size = new Size(61, 15);
-            label10.TabIndex = 43;
-            label10.Text = "Pengguna";
-            // 
-            // totalPengguna
-            // 
-            totalPengguna.AutoSize = true;
-            totalPengguna.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalPengguna.Location = new Point(172, 130);
-            totalPengguna.Name = "totalPengguna";
-            totalPengguna.Size = new Size(17, 20);
-            totalPengguna.TabIndex = 42;
-            totalPengguna.Text = "0";
-            // 
-            // iconPictureBox2
-            // 
-            iconPictureBox2.BackColor = Color.White;
-            iconPictureBox2.ForeColor = Color.FromArgb(15, 83, 122);
-            iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
-            iconPictureBox2.IconColor = Color.FromArgb(15, 83, 122);
-            iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            iconPictureBox2.IconSize = 51;
-            iconPictureBox2.Location = new Point(17, 178);
-            iconPictureBox2.Name = "iconPictureBox2";
-            iconPictureBox2.Size = new Size(51, 51);
-            iconPictureBox2.TabIndex = 38;
-            iconPictureBox2.TabStop = false;
-            // 
-            // totalBuku
-            // 
-            totalBuku.AutoSize = true;
-            totalBuku.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalBuku.Location = new Point(85, 204);
-            totalBuku.Name = "totalBuku";
-            totalBuku.Size = new Size(17, 20);
-            totalBuku.TabIndex = 45;
-            totalBuku.Text = "0";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(81, 178);
-            label13.Name = "label13";
-            label13.Size = new Size(63, 15);
-            label13.TabIndex = 44;
-            label13.Text = "Total Buku";
-            // 
-            // iconPictureBox3
-            // 
-            iconPictureBox3.BackColor = Color.White;
-            iconPictureBox3.ForeColor = Color.FromArgb(15, 83, 122);
-            iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
-            iconPictureBox3.IconColor = Color.FromArgb(15, 83, 122);
-            iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            iconPictureBox3.IconSize = 51;
-            iconPictureBox3.Location = new Point(17, 253);
-            iconPictureBox3.Name = "iconPictureBox3";
-            iconPictureBox3.Size = new Size(51, 51);
-            iconPictureBox3.TabIndex = 38;
-            iconPictureBox3.TabStop = false;
-            // 
-            // totalPinjaman
-            // 
-            totalPinjaman.AutoSize = true;
-            totalPinjaman.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalPinjaman.Location = new Point(85, 279);
-            totalPinjaman.Name = "totalPinjaman";
-            totalPinjaman.Size = new Size(17, 20);
-            totalPinjaman.TabIndex = 47;
-            totalPinjaman.Text = "0";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(81, 253);
-            label14.Name = "label14";
-            label14.Size = new Size(86, 15);
-            label14.TabIndex = 46;
-            label14.Text = "Total Pinjaman";
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 8F);
+            label11.ForeColor = Color.FromArgb(19, 146, 167);
+            label11.Location = new Point(17, 55);
+            label11.Name = "label11";
+            label11.Size = new Size(137, 13);
+            label11.TabIndex = 38;
+            label11.Text = "Lihat rigkasan data anda!";
             // 
             // totalPinjamanSelesai
             // 
@@ -409,16 +279,149 @@
             iconPictureBox4.TabIndex = 48;
             iconPictureBox4.TabStop = false;
             // 
-            // label11
+            // totalPinjaman
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 8F);
-            label11.ForeColor = Color.FromArgb(19, 146, 167);
-            label11.Location = new Point(17, 55);
-            label11.Name = "label11";
-            label11.Size = new Size(137, 13);
-            label11.TabIndex = 38;
-            label11.Text = "Lihat rigkasan data anda!";
+            totalPinjaman.AutoSize = true;
+            totalPinjaman.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalPinjaman.Location = new Point(85, 279);
+            totalPinjaman.Name = "totalPinjaman";
+            totalPinjaman.Size = new Size(17, 20);
+            totalPinjaman.TabIndex = 47;
+            totalPinjaman.Text = "0";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.Location = new Point(81, 253);
+            label14.Name = "label14";
+            label14.Size = new Size(86, 15);
+            label14.TabIndex = 46;
+            label14.Text = "Total Pinjaman";
+            // 
+            // iconPictureBox3
+            // 
+            iconPictureBox3.BackColor = Color.White;
+            iconPictureBox3.ForeColor = Color.FromArgb(15, 83, 122);
+            iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
+            iconPictureBox3.IconColor = Color.FromArgb(15, 83, 122);
+            iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconPictureBox3.IconSize = 51;
+            iconPictureBox3.Location = new Point(17, 253);
+            iconPictureBox3.Name = "iconPictureBox3";
+            iconPictureBox3.Size = new Size(51, 51);
+            iconPictureBox3.TabIndex = 38;
+            iconPictureBox3.TabStop = false;
+            // 
+            // totalBuku
+            // 
+            totalBuku.AutoSize = true;
+            totalBuku.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalBuku.Location = new Point(85, 204);
+            totalBuku.Name = "totalBuku";
+            totalBuku.Size = new Size(17, 20);
+            totalBuku.TabIndex = 45;
+            totalBuku.Text = "0";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.Location = new Point(81, 178);
+            label13.Name = "label13";
+            label13.Size = new Size(63, 15);
+            label13.TabIndex = 44;
+            label13.Text = "Total Buku";
+            // 
+            // iconPictureBox2
+            // 
+            iconPictureBox2.BackColor = Color.White;
+            iconPictureBox2.ForeColor = Color.FromArgb(15, 83, 122);
+            iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
+            iconPictureBox2.IconColor = Color.FromArgb(15, 83, 122);
+            iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconPictureBox2.IconSize = 51;
+            iconPictureBox2.Location = new Point(17, 178);
+            iconPictureBox2.Name = "iconPictureBox2";
+            iconPictureBox2.Size = new Size(51, 51);
+            iconPictureBox2.TabIndex = 38;
+            iconPictureBox2.TabStop = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.FromArgb(19, 146, 167);
+            label10.Location = new Point(207, 133);
+            label10.Name = "label10";
+            label10.Size = new Size(61, 15);
+            label10.TabIndex = 43;
+            label10.Text = "Pengguna";
+            // 
+            // totalPengguna
+            // 
+            totalPengguna.AutoSize = true;
+            totalPengguna.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalPengguna.Location = new Point(172, 130);
+            totalPengguna.Name = "totalPengguna";
+            totalPengguna.Size = new Size(17, 20);
+            totalPengguna.TabIndex = 42;
+            totalPengguna.Text = "0";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.FromArgb(130, 202, 24);
+            label9.Location = new Point(118, 133);
+            label9.Name = "label9";
+            label9.Size = new Size(43, 15);
+            label9.TabIndex = 41;
+            label9.Text = "Admin";
+            // 
+            // totalAdmin
+            // 
+            totalAdmin.AutoSize = true;
+            totalAdmin.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalAdmin.Location = new Point(81, 130);
+            totalAdmin.Name = "totalAdmin";
+            totalAdmin.Size = new Size(17, 20);
+            totalAdmin.TabIndex = 40;
+            totalAdmin.Text = "0";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(77, 104);
+            label8.Name = "label8";
+            label8.Size = new Size(90, 15);
+            label8.TabIndex = 39;
+            label8.Text = "Total Pengguna";
+            // 
+            // iconPictureBox1
+            // 
+            iconPictureBox1.BackColor = Color.White;
+            iconPictureBox1.ForeColor = Color.FromArgb(15, 83, 122);
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
+            iconPictureBox1.IconColor = Color.FromArgb(15, 83, 122);
+            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            iconPictureBox1.IconSize = 51;
+            iconPictureBox1.Location = new Point(17, 100);
+            iconPictureBox1.Name = "iconPictureBox1";
+            iconPictureBox1.Size = new Size(51, 51);
+            iconPictureBox1.TabIndex = 38;
+            iconPictureBox1.TabStop = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(15, 34);
+            label7.Name = "label7";
+            label7.Size = new Size(132, 19);
+            label7.TabIndex = 38;
+            label7.Text = "Jumlah data anda!";
             // 
             // PanelAdmin
             // 
@@ -448,10 +451,10 @@
             ((System.ComponentModel.ISupportInitialize)btnPinjaman).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

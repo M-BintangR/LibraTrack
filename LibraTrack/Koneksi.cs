@@ -10,7 +10,7 @@ namespace LibraTrack
 {
     internal class Koneksi
     {
-        private static readonly string connectionString = "SERVER=localhost;port=3306;database=cafee;UID=root;";
+        private static readonly string connectionString = "SERVER=localhost;port=3306;database=libra_track;UID=root;";
         private readonly MySqlConnection conn;
 
         public Koneksi()

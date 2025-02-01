@@ -90,6 +90,7 @@
             // btnBuku
             // 
             btnBuku.BackColor = Color.White;
+            btnBuku.Cursor = Cursors.Hand;
             btnBuku.ForeColor = Color.FromArgb(15, 83, 122);
             btnBuku.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
             btnBuku.IconColor = Color.FromArgb(15, 83, 122);
@@ -144,6 +145,7 @@
             // btnKembalikanBuku
             // 
             btnKembalikanBuku.BackColor = Color.White;
+            btnKembalikanBuku.Cursor = Cursors.Hand;
             btnKembalikanBuku.ForeColor = Color.FromArgb(15, 83, 122);
             btnKembalikanBuku.IconChar = FontAwesome.Sharp.IconChar.Bookmark;
             btnKembalikanBuku.IconColor = Color.FromArgb(15, 83, 122);

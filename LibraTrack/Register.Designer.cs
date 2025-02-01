@@ -88,6 +88,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(219, 35);
             txtPassword.TabIndex = 16;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // label1
             // 
@@ -109,6 +110,7 @@
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(219, 35);
             txtEmail.TabIndex = 14;
+            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // lblToLogin
             // 
@@ -140,6 +142,7 @@
             btnRegister.TabIndex = 12;
             btnRegister.Text = "Daftar";
             btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
             // 
             // pictureBox2
             // 
@@ -186,6 +189,7 @@
             txtNama.Name = "txtNama";
             txtNama.Size = new Size(219, 35);
             txtNama.TabIndex = 20;
+            txtNama.TextChanged += txtNama_TextChanged;
             // 
             // label6
             // 
@@ -207,6 +211,7 @@
             txtKota.Name = "txtKota";
             txtKota.Size = new Size(219, 35);
             txtKota.TabIndex = 22;
+            txtKota.TextChanged += txtKota_TextChanged;
             // 
             // label7
             // 
@@ -228,6 +233,7 @@
             txtAlamat.Name = "txtAlamat";
             txtAlamat.Size = new Size(461, 87);
             txtAlamat.TabIndex = 24;
+            txtAlamat.TextChanged += txtAlamat_TextChanged;
             // 
             // Register
             // 

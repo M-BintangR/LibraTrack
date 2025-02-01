@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.Logging;
+
 namespace LibraTrack
 {
     public partial class Form1 : Form
@@ -21,16 +23,16 @@ namespace LibraTrack
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(this.email == "admin@gmail.com" && this.password == "adminadmin")
+            LoginApp login = new LoginApp(this.email, this.password);
+
+            if (login.VerifyLogin())
             {
-                new PanelAdmin().Show();
-            }else if(this.email == "user@gmail.com" && this.password == "useruser")
-            {
-                new PenggunaPanel().Show();
+                MessageBox.Show("Anda berhasil login!", "Berhasil");
             }
             else
             {
-                MessageBox.Show("Ada yang salah : password atau email anda mungkin salah, cek kembali data anda!", "Terjadi kesalahan.");
+                MessageBox.Show("Ada yang salah, anda tidak dapat login, cek kembali password & email anda", "Pesan kesalahan");
+                new Form1().Show();
             }
 
             this.Hide();
