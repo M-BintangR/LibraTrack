@@ -48,8 +48,7 @@ namespace LibraTrack
 
                             MessageBox.Show("Login Berhasil!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            // AMBIL SESI
-                            new UserModel(id, name, email, role, city, address);
+                            UserSession.UserCurrent = new UserModel(id, name, email, role, city, address);
 
                             if (role == "admin")
                             {

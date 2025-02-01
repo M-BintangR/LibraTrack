@@ -16,5 +16,17 @@ namespace LibraTrack
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            new PenggunaPanel().Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+            this.Hide();
+        }
     }
 }

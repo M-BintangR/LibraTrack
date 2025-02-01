@@ -101,6 +101,7 @@
             btnBuku.Size = new Size(99, 99);
             btnBuku.TabIndex = 33;
             btnBuku.TabStop = false;
+            btnBuku.Click += btnBuku_Click;
             // 
             // label4
             // 
@@ -156,6 +157,7 @@
             btnKembalikanBuku.Size = new Size(99, 99);
             btnKembalikanBuku.TabIndex = 37;
             btnKembalikanBuku.TabStop = false;
+            btnKembalikanBuku.Click += btnKembalikanBuku_Click;
             // 
             // PenggunaPanel
             // 

@@ -22,5 +22,17 @@ namespace LibraTrack
             new Form1().Show();
             this.Hide();
         }
+
+        private void btnBuku_Click(object sender, EventArgs e)
+        {
+            new PinjamBukuForm().Show();
+            this.Hide();
+        }
+
+        private void btnKembalikanBuku_Click(object sender, EventArgs e)
+        {
+            new KembalikanBukuForm().Show();
+            this.Hide();
+        }
     }
 }
