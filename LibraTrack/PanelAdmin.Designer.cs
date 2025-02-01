@@ -57,6 +57,9 @@
             label8 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label7 = new Label();
+            totalBelumKonfirmasi = new Label();
+            label15 = new Label();
+            iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnPengguna).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnBuku).BeginInit();
@@ -66,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox5).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -213,6 +217,9 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(totalBelumKonfirmasi);
+            panel1.Controls.Add(label15);
+            panel1.Controls.Add(iconPictureBox5);
             panel1.Controls.Add(label11);
             panel1.Controls.Add(totalPinjamanSelesai);
             panel1.Controls.Add(label16);
@@ -232,7 +239,7 @@
             panel1.Controls.Add(label7);
             panel1.Location = new Point(600, 43);
             panel1.Name = "panel1";
-            panel1.Size = new Size(287, 422);
+            panel1.Size = new Size(287, 479);
             panel1.TabIndex = 37;
             // 
             // label11
@@ -424,12 +431,46 @@
             label7.TabIndex = 38;
             label7.Text = "Jumlah data anda!";
             // 
+            // totalBelumKonfirmasi
+            // 
+            totalBelumKonfirmasi.AutoSize = true;
+            totalBelumKonfirmasi.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalBelumKonfirmasi.Location = new Point(85, 431);
+            totalBelumKonfirmasi.Name = "totalBelumKonfirmasi";
+            totalBelumKonfirmasi.Size = new Size(17, 20);
+            totalBelumKonfirmasi.TabIndex = 53;
+            totalBelumKonfirmasi.Text = "0";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.Location = new Point(81, 405);
+            label15.Name = "label15";
+            label15.Size = new Size(99, 15);
+            label15.TabIndex = 52;
+            label15.Text = "Butuh Konfirmasi";
+            // 
+            // iconPictureBox5
+            // 
+            iconPictureBox5.BackColor = Color.White;
+            iconPictureBox5.ForeColor = Color.FromArgb(15, 83, 122);
+            iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
+            iconPictureBox5.IconColor = Color.FromArgb(15, 83, 122);
+            iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconPictureBox5.IconSize = 51;
+            iconPictureBox5.Location = new Point(17, 405);
+            iconPictureBox5.Name = "iconPictureBox5";
+            iconPictureBox5.Size = new Size(51, 51);
+            iconPictureBox5.TabIndex = 51;
+            iconPictureBox5.TabStop = false;
+            // 
             // PanelAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(919, 501);
+            ClientSize = new Size(919, 554);
             Controls.Add(panel1);
             Controls.Add(label6);
             Controls.Add(btnPinjaman);
@@ -456,6 +497,7 @@
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -491,5 +533,8 @@
         private Label totalBuku;
         private Label label13;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private Label totalBelumKonfirmasi;
+        private Label label15;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
     }
 }
