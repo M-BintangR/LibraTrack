@@ -81,6 +81,7 @@
             btnLogin.TabIndex = 2;
             btnLogin.Text = "Masuk";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // lblToRegister
             // 
