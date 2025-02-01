@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibraTrack
 {
-    public partial class PanelAdmin : Form
+    public partial class PenggunaPanel : Form
     {
-        public PanelAdmin()
+        public PenggunaPanel()
         {
             InitializeComponent();
         }
@@ -21,16 +21,6 @@ namespace LibraTrack
         {
             new Form1().Show();
             this.Hide();
-        }
-
-        private void btnPengguna_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuku_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

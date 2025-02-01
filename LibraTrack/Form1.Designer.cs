@@ -107,6 +107,7 @@
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(278, 35);
             txtEmail.TabIndex = 4;
+            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // label1
             // 
@@ -138,6 +139,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(278, 35);
             txtPassword.TabIndex = 6;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // label3
             // 
