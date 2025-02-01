@@ -1,4 +1,6 @@
-﻿using MySql.Data.MySqlClient;
+﻿using LibraTrack.Model;
+using LibraTrack.Session;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,12 +40,21 @@ namespace LibraTrack
                         if (reader.Read())
                         {
                             string role = reader["role"].ToString() ?? "";
+                            string name = reader["name"].ToString() ?? "";
+                            string id = reader["id_user"].ToString() ?? "";
+                            string email = reader["email"].ToString() ?? "";
+                            string city = reader["city"].ToString() ?? "";
+                            string address = reader["address"].ToString() ?? "";
 
                             MessageBox.Show("Login Berhasil!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            // AMBIL SESI
+                            new UserModel(id, name, email, role, city, address);
 
                             if (role == "admin")
                             {
                                 new PanelAdmin().Show();
+
                             }
                             else if (role == "user")
                             {
