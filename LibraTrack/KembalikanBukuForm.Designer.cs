@@ -40,15 +40,6 @@
             label15 = new Label();
             label14 = new Label();
             label13 = new Label();
-            emailPeminjam = new Label();
-            kotaPeminjam = new Label();
-            alamatPeminjam = new Label();
-            namaPeminjam = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
             status = new Label();
             lblStatus = new Label();
             btnReset = new Button();
@@ -129,20 +120,11 @@
             panel1.Controls.Add(label15);
             panel1.Controls.Add(label14);
             panel1.Controls.Add(label13);
-            panel1.Controls.Add(emailPeminjam);
-            panel1.Controls.Add(kotaPeminjam);
-            panel1.Controls.Add(alamatPeminjam);
-            panel1.Controls.Add(namaPeminjam);
-            panel1.Controls.Add(label12);
-            panel1.Controls.Add(label11);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(label8);
             panel1.Controls.Add(status);
             panel1.Controls.Add(lblStatus);
             panel1.Location = new Point(23, 197);
             panel1.Name = "panel1";
-            panel1.Size = new Size(401, 460);
+            panel1.Size = new Size(401, 336);
             panel1.TabIndex = 71;
             // 
             // btnKonfirmasi
@@ -152,17 +134,18 @@
             btnKonfirmasi.FlatStyle = FlatStyle.Flat;
             btnKonfirmasi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnKonfirmasi.ForeColor = Color.White;
-            btnKonfirmasi.Location = new Point(23, 403);
+            btnKonfirmasi.Location = new Point(23, 278);
             btnKonfirmasi.Name = "btnKonfirmasi";
             btnKonfirmasi.Size = new Size(347, 39);
             btnKonfirmasi.TabIndex = 65;
             btnKonfirmasi.Text = "Setujui Pengembalian";
             btnKonfirmasi.UseVisualStyleBackColor = false;
+            btnKonfirmasi.Click += btnKonfirmasi_Click;
             // 
             // waktuPengembalian
             // 
             waktuPengembalian.AutoSize = true;
-            waktuPengembalian.Location = new Point(193, 357);
+            waktuPengembalian.Location = new Point(195, 193);
             waktuPengembalian.Name = "waktuPengembalian";
             waktuPengembalian.Size = new Size(44, 15);
             waktuPengembalian.TabIndex = 80;
@@ -171,7 +154,7 @@
             // judulBuku
             // 
             judulBuku.AutoSize = true;
-            judulBuku.Location = new Point(28, 357);
+            judulBuku.Location = new Point(30, 193);
             judulBuku.Name = "judulBuku";
             judulBuku.Size = new Size(44, 15);
             judulBuku.TabIndex = 79;
@@ -181,7 +164,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(193, 324);
+            label15.Location = new Point(195, 160);
             label15.Name = "label15";
             label15.Size = new Size(121, 15);
             label15.TabIndex = 78;
@@ -191,7 +174,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(28, 324);
+            label14.Location = new Point(30, 160);
             label14.Name = "label14";
             label14.Size = new Size(39, 15);
             label14.TabIndex = 77;
@@ -202,98 +185,11 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             label13.ForeColor = Color.Black;
-            label13.Location = new Point(23, 289);
+            label13.Location = new Point(25, 125);
             label13.Name = "label13";
             label13.Size = new Size(77, 19);
             label13.TabIndex = 76;
             label13.Text = "Data Buku";
-            // 
-            // emailPeminjam
-            // 
-            emailPeminjam.AutoSize = true;
-            emailPeminjam.Location = new Point(196, 243);
-            emailPeminjam.Name = "emailPeminjam";
-            emailPeminjam.Size = new Size(44, 15);
-            emailPeminjam.TabIndex = 75;
-            emailPeminjam.Text = "label13";
-            // 
-            // kotaPeminjam
-            // 
-            kotaPeminjam.AutoSize = true;
-            kotaPeminjam.Location = new Point(22, 243);
-            kotaPeminjam.Name = "kotaPeminjam";
-            kotaPeminjam.Size = new Size(44, 15);
-            kotaPeminjam.TabIndex = 74;
-            kotaPeminjam.Text = "label13";
-            // 
-            // alamatPeminjam
-            // 
-            alamatPeminjam.AutoSize = true;
-            alamatPeminjam.Location = new Point(196, 168);
-            alamatPeminjam.Name = "alamatPeminjam";
-            alamatPeminjam.Size = new Size(44, 15);
-            alamatPeminjam.TabIndex = 73;
-            alamatPeminjam.Text = "label13";
-            // 
-            // namaPeminjam
-            // 
-            namaPeminjam.AutoSize = true;
-            namaPeminjam.Location = new Point(23, 168);
-            namaPeminjam.Name = "namaPeminjam";
-            namaPeminjam.Size = new Size(44, 15);
-            namaPeminjam.TabIndex = 72;
-            namaPeminjam.Text = "label13";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(196, 213);
-            label12.Name = "label12";
-            label12.Size = new Size(36, 15);
-            label12.TabIndex = 71;
-            label12.Text = "Email";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(22, 213);
-            label11.Name = "label11";
-            label11.Size = new Size(56, 15);
-            label11.TabIndex = 70;
-            label11.Text = "Asal Kota";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(196, 141);
-            label10.Name = "label10";
-            label10.Size = new Size(45, 15);
-            label10.TabIndex = 69;
-            label10.Text = "Alamat";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(22, 141);
-            label9.Name = "label9";
-            label9.Size = new Size(39, 15);
-            label9.TabIndex = 68;
-            label9.Text = "Nama";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label8.ForeColor = Color.Black;
-            label8.Location = new Point(18, 107);
-            label8.Name = "label8";
-            label8.Size = new Size(111, 19);
-            label8.TabIndex = 67;
-            label8.Text = "Data Peminjam";
             // 
             // status
             // 
@@ -301,7 +197,7 @@
             status.BackColor = Color.Red;
             status.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             status.ForeColor = Color.White;
-            status.Location = new Point(18, 51);
+            status.Location = new Point(25, 74);
             status.Name = "status";
             status.Padding = new Padding(5, 3, 5, 3);
             status.Size = new Size(176, 25);
@@ -313,7 +209,7 @@
             lblStatus.AutoSize = true;
             lblStatus.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             lblStatus.ForeColor = Color.Black;
-            lblStatus.Location = new Point(18, 23);
+            lblStatus.Location = new Point(25, 46);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(136, 19);
             lblStatus.TabIndex = 65;
@@ -325,12 +221,13 @@
             btnReset.FlatStyle = FlatStyle.Flat;
             btnReset.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnReset.ForeColor = Color.FromArgb(15, 83, 122);
-            btnReset.Location = new Point(466, 624);
+            btnReset.Location = new Point(466, 494);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(379, 39);
             btnReset.TabIndex = 70;
             btnReset.Text = "Load Data dan Bersihkan Form";
             btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += btnReset_Click;
             // 
             // label5
             // 
@@ -353,6 +250,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(320, 28);
             txtSearch.TabIndex = 68;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // label2
             // 
@@ -382,15 +280,16 @@
             dtGridTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtGridTable.Location = new Point(466, 292);
             dtGridTable.Name = "dtGridTable";
-            dtGridTable.Size = new Size(379, 308);
+            dtGridTable.Size = new Size(379, 183);
             dtGridTable.TabIndex = 65;
+            dtGridTable.CellContentClick += dtGridTable_CellContentClick;
             // 
             // KembalikanBukuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(871, 686);
+            ClientSize = new Size(871, 551);
             Controls.Add(panel1);
             Controls.Add(btnReset);
             Controls.Add(label5);
@@ -429,16 +328,6 @@
         private Label label15;
         private Label label14;
         private Label label13;
-        private Label emailPeminjam;
-        private Label kotaPeminjam;
-        private Label alamatPeminjam;
-        private Label namaPeminjam;
-        private Label label12;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label status;
         private Label lblStatus;
         private Button btnReset;
         private Label label5;
@@ -446,5 +335,6 @@
         private Label label2;
         private Label label1;
         private DataGridView dtGridTable;
+        private Label status;
     }
 }

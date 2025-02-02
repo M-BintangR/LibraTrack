@@ -89,6 +89,8 @@ namespace LibraTrack
 
         private void resetData()
         {
+            LoadDataPinjaman();
+
             namaPeminjam.Text = "***";
             alamatPeminjam.Text = "***";
             kotaPeminjam.Text = "***";
@@ -165,28 +167,7 @@ namespace LibraTrack
                 this.lblStatus.Visible = true;
                 this.status.Visible = true;
 
-                if (statusRental == "RENT")
-                {
-                    this.btnKonfirmasi.Visible = false;
-                    this.status.Text = "SEDANG DI SEWAKAN";
-                    this.status.BackColor = Color.DarkOrange;
-                }
-
-                if (statusRental == "FINISH")
-                {
-                    if (konfirmasi == "NONE")
-                    {
-                        this.btnKonfirmasi.Visible = true;
-                        this.status.Text = "SELESAI BACA (BELUM DI KONFIRMASI)";
-                        this.status.BackColor = Color.Red;
-                    }
-                    else
-                    {
-                        this.btnKonfirmasi.Visible = false;
-                        this.status.Text = "TELAH DI KEMBALIKAN (SUDAH DI KONFIRMASI)";
-                        this.status.BackColor = Color.Lime;
-                    }
-                }
+                resetStatus();
             }
         }
 
@@ -225,6 +206,7 @@ namespace LibraTrack
                         {
                             MessageBox.Show("Anda telah menyetujui pengembalian buku!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             resetStatus();
+                            resetData();
                         }
                         else
                         {

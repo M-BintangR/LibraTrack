@@ -63,7 +63,7 @@ namespace LibraTrack
             {
                 koneksi.openConnection();
 
-                string query = @"SELECT * FROM rent_books WHERE user_id = @IdUser WHERE status_rent = 'RENT' AND status_admin = 'NONE'";
+                string query = @"SELECT * FROM rent_books WHERE user_id = @IdUser AND status_rent = 'RENT' AND status_admin = 'NONE'";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, koneksi.GetConnection()))
                 {
